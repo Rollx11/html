@@ -1,4 +1,139 @@
+*{
+    margin: 0;
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background: black;
+    display: flex;
+}
 
-body{
-    background: red;
+
+.logo{
+    text-transform: uppercase;
+    color: white;
+    font-width: 800;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%;
+}
+nav{
+    margin-top: 56px;
+    margin-left: 29%;
+}
+.topnav a{
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.topnav a:hover{
+    border-bottom: 4px solid #b17713;
+}
+main{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main_welcome{
+    background: black;
+    text-align: center;
+}
+
+.main_welcome p{
+    color: brown;
+    font-size: 24px;
+}
+.main_welcome h1{
+    color: white;
+    font-size: 30px;
+}
+.welcom{
+    font-size: 30px;
+    color: #b17713;
+}
+.page {
+    background-image: url(images/bag.jpg);
+    background-size: 100%;
+
+
+}
+.about_left{
+
+    width: 70%;
+    margin-left: auto;
+
+}
+h1{
+    margin-bottom: 15px;
+}
+.main_about{
+    display: flex;
+    padding: 100px 0 100px 0;
+
+}
+.about_right{
+
+    margin-left: 170px;
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+
+}
+.text{
+    font-size: 35px;
+    margin: 20px;
+    padding: 10px;
+    list-style: square;
+    color: blue;
+}
+.min-100{
+    min-width: 100%;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+footer a{
+    color: white;
+    font-size: 26px;
+    margin-left: 13px;
+}
+
+@media screen and (max-width:1010px ) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: white;
+        font-size: 14px;
+    }
+    .min-100{
+        max-width: 100%;
+    }
+    .main_about{
+        flex-direction: column;
+    }
+    .about_left{
+        align-self: center;
+        margin-left: 0;
+    }
+    .about_right{
+        text-align: center;
+        margin-left: 0;
+    }
 }
